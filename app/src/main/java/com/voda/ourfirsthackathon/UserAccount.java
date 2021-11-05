@@ -6,6 +6,7 @@ public class UserAccount {
     private String emailId;
     private String password;
 
+
     public UserAccount() { }
 
     public String getIdToken() { return idToken; }
