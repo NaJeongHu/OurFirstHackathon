@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "742482679885",
+    "project_id": "ourfirsthackathon",
+    "storage_bucket": "ourfirsthackathon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742482679885:android:04d3e253a0f66c5de7a404",
+        "android_client_info": {
+          "package_name": "com.voda.ourfirsthackathon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742482679885-qo9o5rlcrp2vgnslr64q6tt93mqmp1ne.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_WoXLUkXhrZ6lboxTt3UJqSCVil9Y6PI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742482679885-qo9o5rlcrp2vgnslr64q6tt93mqmp1ne.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
