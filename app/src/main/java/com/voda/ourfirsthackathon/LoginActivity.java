@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -20,7 +21,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     private FirebaseAuth mFirebaseAuth;     // 파이어베이스 인증
     private EditText mEtEmail, mEtPassword;
-    private Button mBtnLogin;
+    private CardView mBtnLogin;
     private TextView mTvJoin;
 
     @Override
@@ -34,8 +35,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private void init() {
-        mEtEmail = findViewById(R.id.et_email);
-        mEtPassword = findViewById(R.id.et_password);
+        mEtEmail = findViewById(R.id.edit_login_email);
+        mEtPassword = findViewById(R.id.edit_login_password);
         mBtnLogin = findViewById(R.id.btn_login);
         mTvJoin = findViewById(R.id.btn_join);
 
