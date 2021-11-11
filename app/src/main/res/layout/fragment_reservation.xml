@@ -83,7 +83,7 @@
                             android:scaleType="fitXY"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:src="@drawable/icon_couple"/>
+                            android:src="@drawable/sample_myphoto"/>
 
                     </androidx.cardview.widget.CardView>
 

@@ -11,11 +11,12 @@
         android:id="@+id/ll_login_logo"
         android:layout_width="match_parent"
         android:layout_height="300dp"
+        android:gravity="center"
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="300dp"
-            android:layout_height="300dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:layout_gravity="center"
             android:id="@+id/iv_logo"
             android:src="@drawable/icon_logo"/>
