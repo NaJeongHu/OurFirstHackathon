@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         //tabNames.stream().forEach(name ->tabLayout.addTab(tabLayout.newTab().setText(name)));
         tabLayout.setupWithViewPager(viewPager);
 
+
         //Tab 아이콘 설정
         tabLayout.getTabAt(0).setIcon(R.drawable.icon_facebook);
         tabLayout.getTabAt(1).setIcon(R.drawable.icon_instagram);
