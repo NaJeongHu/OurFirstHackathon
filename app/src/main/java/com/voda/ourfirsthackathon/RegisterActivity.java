@@ -87,6 +87,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                             account.setIdToken(firebaseUser.getUid());
                             account.setEmailId(firebaseUser.getEmail());
                             account.setPassword(strPassword);
+                            account.setAuth(false);
 
                             // setValue : database에 insert 행위
                             mDatabaseRef.child("Account").child("user").child(firebaseUser.getUid()).setValue(account)

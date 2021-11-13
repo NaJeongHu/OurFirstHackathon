@@ -5,6 +5,7 @@ public class UserAccount {
     private String idToken;
     private String emailId;
     private String password;
+    private Boolean Auth;
 
     public UserAccount() { }
 
@@ -19,4 +20,12 @@ public class UserAccount {
     public String getPassword() { return password; }
 
     public void setPassword(String password) { this.password = password; }
+
+    public Boolean getAuth() {
+        return Auth;
+    }
+
+    public void setAuth(Boolean auth) {
+        Auth = auth;
+    }
 }
