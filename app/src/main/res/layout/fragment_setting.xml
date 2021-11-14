@@ -116,6 +116,7 @@
                     android:layout_height="wrap_content"
                     android:paddingBottom="20dp"
                     android:paddingTop="20dp"
+                    android:background="?attr/selectableItemBackground"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -251,6 +252,7 @@
 
                 <LinearLayout
                     android:id="@+id/linear_auth"
+                    android:background="?attr/selectableItemBackground"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="20dp"
@@ -283,6 +285,8 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/linear_reservation"
+                    android:background="?attr/selectableItemBackground"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="20dp"
@@ -315,6 +319,8 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/linear_notice"
+                    android:background="?attr/selectableItemBackground"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="20dp"

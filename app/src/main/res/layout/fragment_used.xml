@@ -74,14 +74,28 @@
                         android:orientation="horizontal">
 
                         <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/applesdgothicneob"
+                            android:text="리뷰 미작성"
+                            android:textColor="@color/main_purple"
+                            android:textSize="12dp" />
+
+                        <TextView
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
                             android:fontFamily="@font/applesdgothicneob"
                             android:gravity="right"
-                            android:text="이용일 21.08.03"
+                            android:text="이용일 21.11.01"
                             android:textSize="12dp" />
 
                     </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#DADEE0"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -95,11 +109,11 @@
                             app:cardCornerRadius="10dp">
 
                             <ImageView
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
                                 android:layout_gravity="top"
                                 android:scaleType="fitXY"
-                                android:src="@drawable/icon_school" />
+                                android:src="@drawable/school1" />
 
                         </androidx.cardview.widget.CardView>
 
@@ -114,17 +128,240 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/applesdgothicneob"
-                                android:text="운암초등학교 대강당"
+                                android:text="하나고등학교 강당"
                                 android:textColor="@color/black"
                                 android:textSize="18dp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
+                                android:layout_marginTop="5dp"
                                 android:fontFamily="@font/applesdgothicneob"
                                 android:text="배드민턴 8번 코트"
+                                android:textSize="15dp" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:paddingTop="5dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/applesdgothicneob"
+                                        android:text="이용시간"
+                                        android:textColor="@color/black"
+                                        android:textSize="12dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/applesdgothicneob"
+                                        android:text="2시간"
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#DADEE0"/>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:paddingTop="5dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/applesdgothicneob"
+                                        android:text="이용료"
+                                        android:textColor="@color/black"
+                                        android:textSize="12dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/applesdgothicneob"
+                                        android:text="6000원"
+                                        android:textSize="12dp" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="리뷰 쓰러가기"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/applesdgothicneob"
+                            android:text="이용완료"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/applesdgothicneob"
+                            android:gravity="right"
+                            android:text="이용일 21.09.13"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#DADEE0"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="10dp">
+
+                            <ImageView
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="top"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/school2" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_marginLeft="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/applesdgothicneob"
+                                android:text="새롬고등학교 강당"
+                                android:textColor="@color/black"
                                 android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/applesdgothicneob"
+                                android:text="농구 2,3번 코트"
+                                android:textSize="15dp" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:paddingTop="5dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/applesdgothicneob"
+                                        android:text="이용시간"
+                                        android:textColor="@color/black"
+                                        android:textSize="12dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/applesdgothicneob"
+                                        android:text="3시간"
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#DADEE0"/>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:paddingTop="5dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/applesdgothicneob"
+                                        android:text="이용료"
+                                        android:textColor="@color/black"
+                                        android:textSize="12dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/applesdgothicneob"
+                                        android:text="10000원"
+                                        android:textSize="12dp" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
 
                         </LinearLayout>
 
@@ -144,9 +381,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="20dp"
+                android:layout_margin="20dp"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="5dp">
 
@@ -162,8 +397,15 @@
                         android:orientation="horizontal">
 
                         <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/applesdgothicneob"
+                            android:text="이용완료"
+                            android:textSize="12dp" />
+
+                        <TextView
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
                             android:fontFamily="@font/applesdgothicneob"
                             android:gravity="right"
                             android:text="이용일 21.08.03"
@@ -171,93 +413,11 @@
 
                     </LinearLayout>
 
-                    <LinearLayout
+                    <View
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:paddingTop="10dp">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:cardCornerRadius="10dp">
-
-                            <ImageView
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
-                                android:layout_gravity="top"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/icon_school" />
-
-                        </androidx.cardview.widget.CardView>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="top"
-                            android:layout_marginLeft="20dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/applesdgothicneob"
-                                android:text="운암초등학교 대강당"
-                                android:textColor="@color/black"
-                                android:textSize="18dp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:fontFamily="@font/applesdgothicneob"
-                                android:text="배드민턴 8번 코트"
-                                android:textSize="18dp" />
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="0.5dp"
                         android:layout_marginTop="10dp"
-                        android:text="리뷰 확인하기"
-                        android:textColor="@color/white" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="20dp"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="5dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="20dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:fontFamily="@font/applesdgothicneob"
-                            android:gravity="right"
-                            android:text="이용일 21.08.03"
-                            android:textSize="12dp" />
-
-                    </LinearLayout>
+                        android:background="#DADEE0"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -271,11 +431,11 @@
                             app:cardCornerRadius="10dp">
 
                             <ImageView
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
                                 android:layout_gravity="top"
                                 android:scaleType="fitXY"
-                                android:src="@drawable/icon_school" />
+                                android:src="@drawable/school3" />
 
                         </androidx.cardview.widget.CardView>
 
@@ -290,17 +450,79 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/applesdgothicneob"
-                                android:text="운암초등학교 대강당"
+                                android:text="운암초등학교 풋살장"
                                 android:textColor="@color/black"
                                 android:textSize="18dp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
+                                android:layout_marginTop="5dp"
                                 android:fontFamily="@font/applesdgothicneob"
-                                android:text="배드민턴 8번 코트"
-                                android:textSize="18dp" />
+                                android:text="1번 풋살장"
+                                android:textSize="15dp" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:paddingTop="5dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/applesdgothicneob"
+                                        android:text="이용시간"
+                                        android:textColor="@color/black"
+                                        android:textSize="12dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/applesdgothicneob"
+                                        android:text="2시간"
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#DADEE0"/>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:paddingTop="5dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/applesdgothicneob"
+                                        android:text="이용료"
+                                        android:textColor="@color/black"
+                                        android:textSize="12dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/applesdgothicneob"
+                                        android:text="7000원"
+                                        android:textSize="12dp" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
 
                         </LinearLayout>
 
