@@ -121,14 +121,26 @@
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_sports"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="20dp"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/kopubdotumbold"
-                    android:layout_marginTop="250dp"
+                    android:layout_marginTop="50dp"
                     android:text="행사 시설"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_event"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="20dp"/>
 
             </LinearLayout>
 

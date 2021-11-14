@@ -1,17 +1,20 @@
 package com.voda.ourfirsthackathon;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.Switch;
 
-public class ReservationFragment extends Fragment {
+public class ReservationFragment extends Fragment implements View.OnClickListener{
 
     private ImageView iv_main_gosearch;
 
@@ -35,7 +38,19 @@ public class ReservationFragment extends Fragment {
 
         iv_main_gosearch = view.findViewById(R.id.iv_main_gosearch);
         iv_main_gosearch.setColorFilter(Color.WHITE, PorterDuff.Mode.SRC_IN);
+        iv_main_gosearch.setOnClickListener(this);
 
         return view;
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch(view.getId()) {
+            case R.id.iv_main_gosearch:
+                Intent intent = new Intent(getActivity(), ReservationActivity.class);
+                startActivity(intent);
+                break;
+
+        }
     }
 }
