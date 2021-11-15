@@ -1,6 +1,8 @@
 package com.voda.ourfirsthackathon;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,6 +26,7 @@ class ReservationRecyclerAdapter extends RecyclerView.Adapter<ReservationRecycle
 
         private TextView name, location, price;
         private ImageView iv_item_list_title;
+        private ImageView iv_item_list_back;
 
         public CustomViewHolder(View view) {
             super(view);
@@ -31,6 +34,7 @@ class ReservationRecyclerAdapter extends RecyclerView.Adapter<ReservationRecycle
             this.location = view.findViewById(R.id.tv_item_list_info);
             this.price = view.findViewById(R.id.tv_item_list_price);
             this.iv_item_list_title = view.findViewById(R.id.iv_item_list_title);
+            this.iv_item_list_back = view.findViewById(R.id.iv_item_list_back);
         }
     }
 
@@ -53,6 +57,8 @@ class ReservationRecyclerAdapter extends RecyclerView.Adapter<ReservationRecycle
         holder.location.setText(mList.get(position).getLocation());
         holder.price.setText("$" + String.valueOf(mList.get(position).getPrice()));
         Glide.with(context).load(mList.get(position).getImageurl()).into(holder.iv_item_list_title);
+        holder.iv_item_list_back.setColorFilter(Color.WHITE, PorterDuff.Mode.SRC_IN);
+        holder.iv_item_list_back.setRotationY(180);
     }
 
     @Override

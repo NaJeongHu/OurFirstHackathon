@@ -53,8 +53,8 @@
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/kopubdotumbold"
                 android:text="3개의 이용 내역"
-                android:textSize="15dp"
-                android:textColor="@color/main_navy"/>
+                android:textColor="@color/main_navy"
+                android:textSize="15dp" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -96,7 +96,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0.5dp"
                         android:layout_marginTop="10dp"
-                        android:background="#DADEE0"/>
+                        android:background="#DADEE0" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -140,6 +140,7 @@
                                 android:fontFamily="@font/applesdgothicneob"
                                 android:text="배드민턴 8번 코트"
                                 android:textSize="15dp" />
+
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -147,10 +148,10 @@
 
                                 <LinearLayout
                                     android:layout_width="0dp"
-                                    android:layout_weight="1"
-                                    android:paddingTop="5dp"
                                     android:layout_height="wrap_content"
-                                    android:orientation="vertical">
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:paddingTop="5dp">
 
                                     <TextView
                                         android:layout_width="wrap_content"
@@ -171,17 +172,17 @@
 
                                 <View
                                     android:layout_width="0.5dp"
-                                    android:layout_marginTop="8dp"
                                     android:layout_height="match_parent"
-                                    android:background="#DADEE0"/>
+                                    android:layout_marginTop="8dp"
+                                    android:background="#DADEE0" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
-                                    android:layout_weight="1"
-                                    android:paddingTop="5dp"
-                                    android:layout_marginLeft="10dp"
                                     android:layout_height="wrap_content"
-                                    android:orientation="vertical">
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:paddingTop="5dp">
 
                                     <TextView
                                         android:layout_width="wrap_content"
@@ -257,7 +258,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0.5dp"
                         android:layout_marginTop="10dp"
-                        android:background="#DADEE0"/>
+                        android:background="#DADEE0" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -301,6 +302,7 @@
                                 android:fontFamily="@font/applesdgothicneob"
                                 android:text="농구 2,3번 코트"
                                 android:textSize="15dp" />
+
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -308,10 +310,10 @@
 
                                 <LinearLayout
                                     android:layout_width="0dp"
-                                    android:layout_weight="1"
-                                    android:paddingTop="5dp"
                                     android:layout_height="wrap_content"
-                                    android:orientation="vertical">
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:paddingTop="5dp">
 
                                     <TextView
                                         android:layout_width="wrap_content"
@@ -332,17 +334,17 @@
 
                                 <View
                                     android:layout_width="0.5dp"
-                                    android:layout_marginTop="8dp"
                                     android:layout_height="match_parent"
-                                    android:background="#DADEE0"/>
+                                    android:layout_marginTop="8dp"
+                                    android:background="#DADEE0" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
-                                    android:layout_weight="1"
-                                    android:paddingTop="5dp"
-                                    android:layout_marginLeft="10dp"
                                     android:layout_height="wrap_content"
-                                    android:orientation="vertical">
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:paddingTop="5dp">
 
                                     <TextView
                                         android:layout_width="wrap_content"
@@ -418,7 +420,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0.5dp"
                         android:layout_marginTop="10dp"
-                        android:background="#DADEE0"/>
+                        android:background="#DADEE0" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -462,6 +464,7 @@
                                 android:fontFamily="@font/applesdgothicneob"
                                 android:text="1번 풋살장"
                                 android:textSize="15dp" />
+
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -469,10 +472,10 @@
 
                                 <LinearLayout
                                     android:layout_width="0dp"
-                                    android:layout_weight="1"
-                                    android:paddingTop="5dp"
                                     android:layout_height="wrap_content"
-                                    android:orientation="vertical">
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:paddingTop="5dp">
 
                                     <TextView
                                         android:layout_width="wrap_content"
@@ -493,17 +496,17 @@
 
                                 <View
                                     android:layout_width="0.5dp"
-                                    android:layout_marginTop="8dp"
                                     android:layout_height="match_parent"
-                                    android:background="#DADEE0"/>
+                                    android:layout_marginTop="8dp"
+                                    android:background="#DADEE0" />
 
                                 <LinearLayout
                                     android:layout_width="0dp"
-                                    android:layout_weight="1"
-                                    android:paddingTop="5dp"
-                                    android:layout_marginLeft="10dp"
                                     android:layout_height="wrap_content"
-                                    android:orientation="vertical">
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:paddingTop="5dp">
 
                                     <TextView
                                         android:layout_width="wrap_content"
