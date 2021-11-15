@@ -15,7 +15,7 @@
         android:visibility="visible"
         android:id="@+id/lottie_progress"
         android:layout_gravity="center"
-        app:lottie_fileName="lottie_progress_housemart.json"
+        app:lottie_fileName="lottie_schoolbookprogress.json"
         app:lottie_autoPlay="false"
         app:lottie_loop="true"/>
 
