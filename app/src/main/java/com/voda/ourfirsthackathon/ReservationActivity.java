@@ -81,12 +81,14 @@ public class ReservationActivity extends AppCompatActivity implements View.OnCli
         mBackButton.setOnClickListener(this);
 
         PermittedList = new ArrayList<AvailableSchool>();
-        for(int i =0;i<10;i++) {
-            AvailableSchool availableSchool = new AvailableSchool(1000, "산격초","대구 북구","httphttphttp");
-            if (availableSchool != null && PermittedList != null) {
-                PermittedList.add(availableSchool);
-            }
-        }
+        PermittedList.add(new AvailableSchool(1000, "청암초등학교", "대구 북구", R.drawable.school_chungam));
+        PermittedList.add(new AvailableSchool(2000, "혜화초등학교", "대구 북구", R.drawable.school_haehwa));
+        PermittedList.add(new AvailableSchool(3000, "초지초등학교", "대구 북구", R.drawable.school_myeonggi));
+        PermittedList.add(new AvailableSchool(4000, "삼산초등학교", "대구 북구", R.drawable.school_samsan));
+        PermittedList.add(new AvailableSchool(6000, "심석초등학교", "대구 북구", R.drawable.school_simsuck));
+        PermittedList.add(new AvailableSchool(7000, "인천별빛초등학교", "인천 미추홀구", R.drawable.school_starlight));
+        PermittedList.add(new AvailableSchool(8000, "양명초등학교", "대구 북구", R.drawable.school_yangmyeong));
+
     }
 
     private void connectToAdapter() {

@@ -55,7 +55,7 @@ class ReservationRecyclerAdapter extends RecyclerView.Adapter<ReservationRecycle
     public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
         holder.name.setText(mList.get(position).getName());
         holder.location.setText(mList.get(position).getLocation());
-        holder.price.setText("$" + String.valueOf(mList.get(position).getPrice()));
+        holder.price.setText(mList.get(position).getPrice()+"원");
         Glide.with(context).load(mList.get(position).getImageurl()).into(holder.iv_item_list_title);
         holder.iv_item_list_back.setColorFilter(Color.WHITE, PorterDuff.Mode.SRC_IN);
         holder.iv_item_list_back.setRotationY(180);

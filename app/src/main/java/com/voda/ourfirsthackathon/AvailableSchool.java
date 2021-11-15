@@ -5,13 +5,13 @@ public class AvailableSchool {
     private int price;
     private String name;
     private String location;
-    private String imageurl;
+    private int image;
 
-    public AvailableSchool(int price, String name, String location, String imageurl) {
+    public AvailableSchool(int price, String name, String location, int image) {
         this.price = price;
         this.name = name;
         this.location = location;
-        this.imageurl = imageurl;
+        this.image = image;
     }
 
     public int getPrice() {
@@ -38,11 +38,11 @@ public class AvailableSchool {
         this.location = location;
     }
 
-    public String getImageurl() {
-        return imageurl;
+    public int getImageurl() {
+        return image;
     }
 
     public void setImageurl(String imageurl) {
-        this.imageurl = imageurl;
+        this.image = image;
     }
 }

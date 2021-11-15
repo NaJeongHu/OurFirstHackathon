@@ -77,19 +77,20 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
                                 // 로그인 성공
-                                alertDialog.dismiss();
+//                                alertDialog.dismiss();
                                 cardview_login_underinfo.startAnimation(endAnim);
 
                                 Handler mHandler = new Handler();
                                 mHandler.postDelayed(new Runnable()  {
                                     public void run() {
+                                        alertDialog.dismiss();
                                         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                         startActivity(intent);
                                         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
                                         finish();   // 현재 엑티비티 파괴
                                     }
-                                }, 400); // 0.5초후
+                                }, 1800); // 2초후
 
 //                                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
 //                                startActivity(intent);

@@ -12,11 +12,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Switch;
 
 public class ReservationFragment extends Fragment implements View.OnClickListener{
 
     private ImageView iv_main_gosearch;
+    private LinearLayout linear_badminton;
 
     public ReservationFragment() { }
 
@@ -38,7 +40,9 @@ public class ReservationFragment extends Fragment implements View.OnClickListene
 
         iv_main_gosearch = view.findViewById(R.id.iv_main_gosearch);
         iv_main_gosearch.setColorFilter(Color.WHITE, PorterDuff.Mode.SRC_IN);
-        iv_main_gosearch.setOnClickListener(this);
+
+        linear_badminton = view.findViewById(R.id.linear_badminton);
+        linear_badminton.setOnClickListener(this);
 
         return view;
     }
@@ -46,7 +50,7 @@ public class ReservationFragment extends Fragment implements View.OnClickListene
     @Override
     public void onClick(View view) {
         switch(view.getId()) {
-            case R.id.iv_main_gosearch:
+            case R.id.linear_badminton:
                 Intent intent = new Intent(getActivity(), ReservationActivity.class);
                 startActivity(intent);
                 break;
