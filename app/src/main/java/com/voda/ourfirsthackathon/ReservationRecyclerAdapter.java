@@ -28,6 +28,7 @@ class ReservationRecyclerAdapter extends RecyclerView.Adapter<ReservationRecycle
         private ImageView iv_item_list_title;
         private ImageView iv_item_list_back;
 
+
         public CustomViewHolder(View view) {
             super(view);
             this.name = view.findViewById(R.id.tv_item_list_name);
