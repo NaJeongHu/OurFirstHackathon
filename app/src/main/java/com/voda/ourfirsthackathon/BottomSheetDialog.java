@@ -29,7 +29,7 @@ public class BottomSheetDialog extends BottomSheetDialogFragment implements View
     private PagerAdapter_Picture adapter;
     private ArrayList<Integer> pictures;
     private CircleIndicator circle_indicator;
-    private NeumorphCardView mNeumorphCardView;
+    private NeumorphCardView card1,card2,card3,card4;
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,8 +48,14 @@ public class BottomSheetDialog extends BottomSheetDialogFragment implements View
 
         viewPager_school_picture = view.findViewById(R.id.viewPager_school_picture);
         circle_indicator = view.findViewById(R.id.circle_indicator);
-        mNeumorphCardView = view.findViewById(R.id.card1);
-        mNeumorphCardView.setOnClickListener(this);
+        card1 = view.findViewById(R.id.card1);
+        card2 = view.findViewById(R.id.card2);
+        card3 = view.findViewById(R.id.card3);
+        card4 = view.findViewById(R.id.card4);
+        card1.setOnClickListener(this);
+        card2.setOnClickListener(this);
+        card3.setOnClickListener(this);
+        card4.setOnClickListener(this);
 
         adapter = new PagerAdapter_Picture(pictures, getContext());
 
@@ -62,8 +68,49 @@ public class BottomSheetDialog extends BottomSheetDialogFragment implements View
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.card1:
-                mNeumorphCardView.setShapeType(1);
+                if(card1.getShapeType()==0){
+                    makeflat();
+                    card1.setShapeType(1);
+                }
+                else{
+                    card1.setShapeType(0);
+                }
+                break;
+            case R.id.card2:
+                if(card2.getShapeType()==0){
+                    makeflat();
+                    card2.setShapeType(1);
+                }
+                else{
+                    card2.setShapeType(0);
+                }
+                break;
+            case R.id.card3:
+                if(card3.getShapeType()==0){
+                    makeflat();
+                    card3.setShapeType(1);
+                }
+                else{
+                    card3.setShapeType(0);
+                }
+                break;
+            case R.id.card4:
+                if(card4.getShapeType()==0){
+                    makeflat();
+                    card4.setShapeType(1);
+                }
+                else{
+                    card4.setShapeType(0);
+                }
                 break;
         }
     }
+
+    private void makeflat(){
+        card1.setShapeType(0);
+        card2.setShapeType(0);
+        card3.setShapeType(0);
+        card4.setShapeType(0);
+    }
+
 }

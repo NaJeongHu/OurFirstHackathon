@@ -186,11 +186,31 @@
                     app:neumorph_insetBottom="12dp"
                     android:padding="12dp">
 
-                    <ImageView
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:padding="20dp"
-                        android:src="@drawable/icon_money"/>
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/icon_money"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="10dp"
+                            android:fontFamily="@font/kopubdotumbold"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:text="이용료"/>
+                    </LinearLayout>
+
+
 
                 </soup.neumorphism.NeumorphCardView>
 
@@ -206,7 +226,7 @@
                     app:neumorph_shadowColorLight="@color/white"
                     app:neumorph_shadowColorDark="#D9D9D9"
                     app:neumorph_lightSource="leftTop"
-                    app:neumorph_shapeType="pressed"
+                    app:neumorph_shapeType="flat"
                     app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
                     app:neumorph_backgroundColor="@color/main_mauve"
                     app:neumorph_inset="12dp"
@@ -216,11 +236,29 @@
                     app:neumorph_insetBottom="12dp"
                     android:padding="12dp">
 
-                    <ImageView
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:padding="20dp"
-                        android:src="@drawable/icon_money"/>
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/icon_notice"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="10dp"
+                            android:fontFamily="@font/kopubdotumbold"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:text="공지사항"/>
+                    </LinearLayout>
 
 
                 </soup.neumorphism.NeumorphCardView>
@@ -247,11 +285,29 @@
                     app:neumorph_insetBottom="12dp"
                     android:padding="12dp">
 
-                    <ImageView
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:padding="20dp"
-                        android:src="@drawable/icon_money"/>
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/icon_rating"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="10dp"
+                            android:fontFamily="@font/kopubdotumbold"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:text="리뷰"/>
+                    </LinearLayout>
 
                 </soup.neumorphism.NeumorphCardView>
 
@@ -266,7 +322,7 @@
                     app:neumorph_shadowColorLight="@color/white"
                     app:neumorph_shadowColorDark="#D9D9D9"
                     app:neumorph_lightSource="leftTop"
-                    app:neumorph_shapeType="pressed"
+                    app:neumorph_shapeType="flat"
                     app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
                     app:neumorph_backgroundColor="@color/main_mauve"
                     app:neumorph_inset="12dp"
@@ -276,11 +332,29 @@
                     app:neumorph_insetBottom="12dp"
                     android:padding="12dp">
 
-                    <ImageView
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:padding="20dp"
-                        android:src="@drawable/icon_money"/>
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/icon_reservation"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="10dp"
+                            android:fontFamily="@font/kopubdotumbold"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:text="예약하기"/>
+                    </LinearLayout>
 
                 </soup.neumorphism.NeumorphCardView>
 
