@@ -146,16 +146,15 @@
             android:orientation="vertical">
 
             <include layout="@layout/detail_item_1"/>
-            <include layout="@layout/detail_item_1"/>
-            <include layout="@layout/detail_item_1"/>
-            <include layout="@layout/detail_item_1"/>
-            <include layout="@layout/detail_item_1"/>
+            <include layout="@layout/detail_item_2"/>
+            <include layout="@layout/detail_item_3"/>
 
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
 
     <LinearLayout
+        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:orientation="horizontal"

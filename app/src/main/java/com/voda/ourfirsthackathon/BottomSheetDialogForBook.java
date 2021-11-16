@@ -35,8 +35,8 @@ public class BottomSheetDialogForBook extends BottomSheetDialogFragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.bottom_sheet_layout_forbook,container,false);
 
-        btn_hide_bt_sheet = view.findViewById(R.id.btn_hide_bt_sheet);
-        btn_hide_bt_sheet.setText(temp);
+        /*
+        //btn_hide_bt_sheet = view.findViewById(R.id.btn_hide_bt_sheet);
         btn_hide_bt_sheet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -46,6 +46,7 @@ public class BottomSheetDialogForBook extends BottomSheetDialogFragment {
                 startActivity(intent);
             }
         });
+        */
 
         return view;
     }
