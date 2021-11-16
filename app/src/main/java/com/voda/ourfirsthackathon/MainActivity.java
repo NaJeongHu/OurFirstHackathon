@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.Window;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -71,9 +72,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 //선택된 탭과 연결된 fragment를 가져옴
-                viewPager.setCurrentItem(tab.getPosition());
+                viewPager.setCurrentItem(tab.getPosition(),false);
                 //아이콘 색상을 흰색으로 설정
                 tab.getIcon().setColorFilter(Color.WHITE, PorterDuff.Mode.SRC_IN);
+                setStatusBarColor(tab.getPosition());
             }
             //선택되지 않은 탭일 때
             @Override
@@ -87,5 +89,25 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    private void setStatusBarColor(int position) {
+
+        Window window = getWindow();
+
+        switch (position) {
+            case 0:
+                window.setStatusBarColor(getResources().getColor(R.color.main_navy));
+                break;
+            case 1:
+                window.setStatusBarColor(getResources().getColor(R.color.main_mauve));
+                break;
+            case 2:
+                window.setStatusBarColor(getResources().getColor(R.color.main_mauve));
+                break;
+            case 3:
+                window.setStatusBarColor(getResources().getColor(R.color.main_navy));
+                break;
+        }
     }
 }

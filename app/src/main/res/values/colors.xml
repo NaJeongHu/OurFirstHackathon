@@ -16,4 +16,5 @@
     <color name="main_purple">#FF8645FF</color>
     <color name="main_mauve">#FFF5F5F9</color>
     <color name="main_white">#FFFFFFFF</color>
+    <color name="main_bright_mauve">#E6EBFA</color>
 </resources>

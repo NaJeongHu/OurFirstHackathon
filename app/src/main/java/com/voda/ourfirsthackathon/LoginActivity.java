@@ -78,12 +78,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                             if (task.isSuccessful()) {
                                 // 로그인 성공
 //                                alertDialog.dismiss();
-                                cardview_login_underinfo.startAnimation(endAnim);
 
                                 Handler mHandler = new Handler();
                                 mHandler.postDelayed(new Runnable()  {
                                     public void run() {
                                         alertDialog.dismiss();
+                                        cardview_login_underinfo.startAnimation(endAnim);
                                         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                         startActivity(intent);
