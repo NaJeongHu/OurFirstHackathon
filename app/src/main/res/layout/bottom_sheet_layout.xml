@@ -222,6 +222,7 @@
                         android:padding="20dp"
                         android:src="@drawable/icon_money"/>
 
+
                 </soup.neumorphism.NeumorphCardView>
 
                 <soup.neumorphism.NeumorphCardView
