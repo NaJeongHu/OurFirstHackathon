@@ -49,10 +49,10 @@ public class MainActivity extends AppCompatActivity {
 
 
         //Tab 아이콘 설정
-        tabLayout.getTabAt(0).setIcon(R.drawable.icon_facebook);
-        tabLayout.getTabAt(1).setIcon(R.drawable.icon_instagram);
-        tabLayout.getTabAt(2).setIcon(R.drawable.icon_kakao);
-        tabLayout.getTabAt(3).setIcon(R.drawable.icon_facebook);
+        tabLayout.getTabAt(0).setIcon(R.drawable.icon_checkbox2);
+        tabLayout.getTabAt(1).setIcon(R.drawable.icon_search);
+        tabLayout.getTabAt(2).setIcon(R.drawable.icon_stack);
+        tabLayout.getTabAt(3).setIcon(R.drawable.icon_user2);
 
         //Tab 아이콘 색상 초기화 (맨 처음 화면일때의 Tab 아이콘 색상 설정)
         tabLayout.getTabAt(0).getIcon().setColorFilter(Color.WHITE, PorterDuff.Mode.SRC_IN);
