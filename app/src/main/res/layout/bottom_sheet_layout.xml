@@ -123,6 +123,65 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_mauve"
+            android:orientation="horizontal">
+
+            <soup.neumorphism.NeumorphCardView
+            android:id="@+id/card1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:neumorph_shadowElevation="4dp"
+            app:neumorph_shadowColorLight="@color/white"
+            app:neumorph_shadowColorDark="#D9D9D9"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shapeType="flat"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+            app:neumorph_backgroundColor="@color/main_mauve"
+            app:neumorph_inset="12dp"
+            app:neumorph_insetStart="12dp"
+            app:neumorph_insetEnd="12dp"
+            app:neumorph_insetTop="12dp"
+            app:neumorph_insetBottom="12dp"
+            android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dp"
+                    android:src="@drawable/icon_money"/>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:neumorph_shadowElevation="4dp"
+                app:neumorph_shadowColorLight="@color/white"
+                app:neumorph_shadowColorDark="#D9D9D9"
+                app:neumorph_lightSource="leftTop"
+                app:neumorph_shapeType="pressed"
+                app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+                app:neumorph_backgroundColor="@color/main_mauve"
+                app:neumorph_inset="12dp"
+                app:neumorph_insetStart="12dp"
+                app:neumorph_insetEnd="12dp"
+                app:neumorph_insetTop="12dp"
+                app:neumorph_insetBottom="12dp"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dp"
+                    android:src="@drawable/icon_money"/>
+
+            </soup.neumorphism.NeumorphCardView>
+
+        </LinearLayout>
+
     </LinearLayout>
 
 </LinearLayout>

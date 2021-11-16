@@ -25,6 +25,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import soup.neumorphism.NeumorphCardView;
+
 public class SettingFragment extends Fragment implements View.OnClickListener {
 
     private FirebaseAuth mFirebaseAuth;     // 파이어베이스 인증
@@ -57,7 +59,6 @@ public class SettingFragment extends Fragment implements View.OnClickListener {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_setting, container, false);
-
         linear_auth = view.findViewById(R.id.linear_auth);
         linear_reservation = view.findViewById(R.id.linear_reservation);
         linear_notice = view.findViewById(R.id.linear_notice);

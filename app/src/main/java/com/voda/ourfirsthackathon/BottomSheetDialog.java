@@ -19,17 +19,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 import me.relex.circleindicator.CircleIndicator;
+import soup.neumorphism.NeumorphCardView;
 
-public class BottomSheetDialog extends BottomSheetDialogFragment {
+public class BottomSheetDialog extends BottomSheetDialogFragment implements View.OnClickListener{
 
     //UI
     private View view;
-
-
     private ViewPager viewPager_school_picture;
     private PagerAdapter_Picture adapter;
     private ArrayList<Integer> pictures;
     private CircleIndicator circle_indicator;
+    private NeumorphCardView mNeumorphCardView;
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +48,8 @@ public class BottomSheetDialog extends BottomSheetDialogFragment {
 
         viewPager_school_picture = view.findViewById(R.id.viewPager_school_picture);
         circle_indicator = view.findViewById(R.id.circle_indicator);
+        mNeumorphCardView = view.findViewById(R.id.card1);
+        mNeumorphCardView.setOnClickListener(this);
 
         adapter = new PagerAdapter_Picture(pictures, getContext());
 
@@ -56,4 +58,12 @@ public class BottomSheetDialog extends BottomSheetDialogFragment {
         return view;
     }
 
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.card1:
+                mNeumorphCardView.setShapeType(1);
+                break;
+        }
+    }
 }
