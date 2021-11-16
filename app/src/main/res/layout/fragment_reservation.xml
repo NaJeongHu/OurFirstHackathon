@@ -112,6 +112,11 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/main_mauve"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -328,11 +333,17 @@
 
                 </HorizontalScrollView>
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/main_mauve"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/kopubdotumbold"
-                    android:layout_marginTop="50dp"
+                    android:layout_marginTop="20dp"
                     android:text="행사 시설"
                     android:layout_marginLeft="20dp"
                     android:layout_marginBottom="20dp"

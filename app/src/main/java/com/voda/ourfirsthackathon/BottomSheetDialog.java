@@ -18,6 +18,8 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import java.util.ArrayList;
 import java.util.List;
 
+import me.relex.circleindicator.CircleIndicator;
+
 public class BottomSheetDialog extends BottomSheetDialogFragment {
 
     //UI
@@ -27,6 +29,7 @@ public class BottomSheetDialog extends BottomSheetDialogFragment {
     private ViewPager viewPager_school_picture;
     private PagerAdapter_Picture adapter;
     private ArrayList<Integer> pictures;
+    private CircleIndicator circle_indicator;
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,11 +47,12 @@ public class BottomSheetDialog extends BottomSheetDialogFragment {
         pictures.add(R.drawable.school3);
 
         viewPager_school_picture = view.findViewById(R.id.viewPager_school_picture);
+        circle_indicator = view.findViewById(R.id.circle_indicator);
 
         adapter = new PagerAdapter_Picture(pictures, getContext());
 
         viewPager_school_picture.setAdapter(adapter);
-
+        circle_indicator.setViewPager(viewPager_school_picture);
         return view;
     }
 
