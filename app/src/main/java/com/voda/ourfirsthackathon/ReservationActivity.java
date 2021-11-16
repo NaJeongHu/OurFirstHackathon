@@ -43,7 +43,7 @@ public class ReservationActivity extends AppCompatActivity implements View.OnCli
                     public void onItemClick(View v, int position) {
                         // todo : bottom sheet layout 필요
 
-                        BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(PermittedList.get(position).getName());
+                        BottomSheetDialog bottomSheetDialog = new BottomSheetDialog();
                         bottomSheetDialog.show(getSupportFragmentManager(), "bottomsheet");
 
 //                        Intent intent = new Intent(getApplicationContext(), HouseInfoActivity.class);

@@ -5,10 +5,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
@@ -16,13 +19,8 @@ public class BottomSheetDialog extends BottomSheetDialogFragment {
 
     private View view;
     private Button btn_hide_bt_sheet;
-    private String temp;
-    private ConstraintLayout bottom_sheet;
-
-    public BottomSheetDialog(String temp) {
-        this.temp = temp;
-    }
-
+    private LinearLayout bottom_sheet;
+    private ViewPager viewPager_school_picture;
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,14 +35,8 @@ public class BottomSheetDialog extends BottomSheetDialogFragment {
 //        bottom_sheet = view.findViewById(R.id.bottom_sheet);
 //        bottom_sheet.setBackgroundResource(android.R.color.transparent);
 //        view.setBackgroundResource(android.R.color.transparent);
-        btn_hide_bt_sheet = view.findViewById(R.id.btn_hide_bt_sheet);
-        btn_hide_bt_sheet.setText(temp);
-        btn_hide_bt_sheet.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                dismiss();
-            }
-        });
+
+        viewPager_school_picture = view.findViewById(R.id.viewPager_school_picture);
 
         return view;
     }
