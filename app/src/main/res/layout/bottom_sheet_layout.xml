@@ -51,13 +51,13 @@
     <me.relex.circleindicator.CircleIndicator
         android:id="@+id/circle_indicator"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="30dp"
         android:layout_marginTop="-20dp"
         android:layout_gravity="center_horizontal|bottom"
         app:ci_drawable="@drawable/menu_indicator_d"
         app:ci_drawable_unselected="@drawable/menu_indicator_s"
-        app:ci_height="6dp"
-        app:ci_width="6dp" />
+        app:ci_height="4dp"
+        app:ci_width="4dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -122,44 +122,26 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/main_mauve"
-            android:orientation="horizontal">
-
-
-
-        </LinearLayout>
-
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_margin="20dp"
-        android:layout_height="200dp">
+        android:layout_margin="15dp"
+        android:layout_height="230dp">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card_price"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            app:cardCornerRadius="20dp"
-            android:visibility="gone"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent">
-
-        </androidx.cardview.widget.CardView>
+        <include layout="@layout/detail_item_price"/>
+        <include layout="@layout/detail_item_notice"/>
+        <include layout="@layout/detail_item_review"/>
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="100dp"
             app:cardCornerRadius="20dp"
+            android:layout_margin="5dp"
             android:backgroundTint="@color/main_mauve"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent">
-
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -260,7 +242,6 @@
                             android:textColor="@color/black"
                             android:text="공지사항"/>
                     </LinearLayout>
-
 
                 </soup.neumorphism.NeumorphCardView>
 

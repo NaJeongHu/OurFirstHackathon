@@ -1,5 +1,6 @@
 package com.voda.ourfirsthackathon;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
@@ -30,6 +32,10 @@ public class BottomSheetDialog extends BottomSheetDialogFragment implements View
     private ArrayList<Integer> pictures;
     private CircleIndicator circle_indicator;
     private NeumorphCardView card1,card2,card3,card4;
+
+    private CardView card_notice, card_price, card_review;
+
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,6 +63,10 @@ public class BottomSheetDialog extends BottomSheetDialogFragment implements View
         card3.setOnClickListener(this);
         card4.setOnClickListener(this);
 
+        card_price = view.findViewById(R.id.card_price);
+        card_notice = view.findViewById(R.id.card_notice);
+        card_review = view.findViewById(R.id.card_review);
+
         adapter = new PagerAdapter_Picture(pictures, getContext());
 
         viewPager_school_picture.setAdapter(adapter);
@@ -71,27 +81,45 @@ public class BottomSheetDialog extends BottomSheetDialogFragment implements View
                 if(card1.getShapeType()==0){
                     makeflat();
                     card1.setShapeType(1);
+                    card_price.setVisibility(View.VISIBLE);
+                    card_notice.setVisibility(View.GONE);
+                    card_review.setVisibility(View.GONE);
                 }
                 else{
                     card1.setShapeType(0);
+                    card_price.setVisibility(View.GONE);
+                    card_notice.setVisibility(View.GONE);
+                    card_review.setVisibility(View.GONE);
                 }
                 break;
             case R.id.card2:
                 if(card2.getShapeType()==0){
                     makeflat();
                     card2.setShapeType(1);
+                    card_notice.setVisibility(View.VISIBLE);
+                    card_price.setVisibility(View.GONE);
+                    card_review.setVisibility(View.GONE);
                 }
                 else{
                     card2.setShapeType(0);
+                    card_price.setVisibility(View.GONE);
+                    card_notice.setVisibility(View.GONE);
+                    card_review.setVisibility(View.GONE);
                 }
                 break;
             case R.id.card3:
                 if(card3.getShapeType()==0){
                     makeflat();
                     card3.setShapeType(1);
+                    card_review.setVisibility(View.VISIBLE);
+                    card_price.setVisibility(View.GONE);
+                    card_notice.setVisibility(View.GONE);
                 }
                 else{
                     card3.setShapeType(0);
+                    card_price.setVisibility(View.GONE);
+                    card_notice.setVisibility(View.GONE);
+                    card_review.setVisibility(View.GONE);
                 }
                 break;
             case R.id.card4:
@@ -102,6 +130,8 @@ public class BottomSheetDialog extends BottomSheetDialogFragment implements View
                 else{
                     card4.setShapeType(0);
                 }
+                Intent intent1 = new Intent(getActivity(), BookActivity.class);
+                startActivity(intent1);
                 break;
         }
     }
