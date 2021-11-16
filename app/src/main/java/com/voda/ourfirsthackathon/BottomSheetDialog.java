@@ -15,12 +15,18 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BottomSheetDialog extends BottomSheetDialogFragment {
 
+    //UI
     private View view;
-    private Button btn_hide_bt_sheet;
-    private LinearLayout bottom_sheet;
+
+
     private ViewPager viewPager_school_picture;
+    private PagerAdapter_Picture adapter;
+    private ArrayList<Integer> pictures;
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,11 +38,16 @@ public class BottomSheetDialog extends BottomSheetDialogFragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.bottom_sheet_layout,container,false);
 
-//        bottom_sheet = view.findViewById(R.id.bottom_sheet);
-//        bottom_sheet.setBackgroundResource(android.R.color.transparent);
-//        view.setBackgroundResource(android.R.color.transparent);
+        pictures = new ArrayList<>();
+        pictures.add(R.drawable.school1);
+        pictures.add(R.drawable.school2);
+        pictures.add(R.drawable.school3);
 
         viewPager_school_picture = view.findViewById(R.id.viewPager_school_picture);
+
+        adapter = new PagerAdapter_Picture(pictures, getContext());
+
+        viewPager_school_picture.setAdapter(adapter);
 
         return view;
     }

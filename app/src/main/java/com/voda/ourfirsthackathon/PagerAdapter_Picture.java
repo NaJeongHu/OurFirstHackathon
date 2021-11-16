@@ -47,19 +47,19 @@ public class PagerAdapter_Picture extends PagerAdapter {
         return view.equals(object);
     }
 
-//    @NonNull
-//    @Override
-//    public Object instantiateItem(@NonNull ViewGroup container, final int position) {
-//        layoutInflater = LayoutInflater.from(context);
-//        View view = layoutInflater.inflate(R.layout.item_picture, container, false);
-//
-//        ImageView imageView;
-//        imageView = view.findViewById(R.id.image_picture);
-//        imageView.setBackgroundResource(pictures.get(position));
-//
-//        container.addView(view, 0);
-//        return view;
-//    }
+    @NonNull
+    @Override
+    public Object instantiateItem(@NonNull ViewGroup container, final int position) {
+        layoutInflater = LayoutInflater.from(context);
+        View view = layoutInflater.inflate(R.layout.item_picture, container, false);
+
+        ImageView imageView;
+        imageView = view.findViewById(R.id.iv_picture_item_picture);
+        imageView.setBackgroundResource(pictures.get(position));
+
+        container.addView(view, 0);
+        return view;
+    }
 
     @Override
     public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
