@@ -149,7 +149,6 @@
 
                 <soup.neumorphism.NeumorphCardView
                     android:id="@+id/card1"
-                    android:layout_marginLeft="5dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -295,7 +294,6 @@
 
                 <soup.neumorphism.NeumorphCardView
                     android:id="@+id/card4"
-                    android:layout_marginRight="5dp"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
