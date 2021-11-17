@@ -15,7 +15,7 @@
         <activity android:name=".PayActivity"/>
         <activity android:name=".BookActivity"/>
         <activity android:name=".ReservationActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"/>
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>

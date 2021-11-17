@@ -163,7 +163,7 @@
             android:fontFamily="@font/applesdgothicneol"
             android:text="정렬 기준 :"
             android:textColor="@color/main_purple"
-            android:textSize="15dp"
+            android:textSize="12dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/tv_sort2"

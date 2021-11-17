@@ -21,4 +21,6 @@
     <color name="main_kakao_yellow">#FEE300</color>
     <color name="main_kakao_navy">#343B58</color>
 
+    <color name="temp">#343090</color>
+
 </resources>
