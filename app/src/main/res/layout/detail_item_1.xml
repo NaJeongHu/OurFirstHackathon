@@ -61,7 +61,7 @@
                     android:id="@+id/space"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="대강당"
+                    android:text="배드민턴 코트 1"
                     android:textSize="18dp"
                     android:textColor="@color/main_navy"
                     android:fontFamily="@font/kopubdotumbold"

@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -25,7 +26,10 @@ public class BottomSheetDialogForBook extends BottomSheetDialogFragment implemen
     private ConstraintLayout bottom_sheet;
     private AppCompatButton btn1, btn2, btn3, btn4;
     private CardView card_pay;
+    private TextView tv_time_forbook;
 
+    private String[] price = {"1시간","2시간","3시간","4시간"};
+    private int i=0;
 
     public BottomSheetDialogForBook(String temp) {
         this.temp = temp;
@@ -50,6 +54,8 @@ public class BottomSheetDialogForBook extends BottomSheetDialogFragment implemen
 
         card_pay = view.findViewById(R.id.card_pay);
 
+        tv_time_forbook = view.findViewById(R.id.tv_time_forbook);
+
         btn1.setOnClickListener(this);
         btn2.setOnClickListener(this);
         btn3.setOnClickListener(this);
@@ -72,21 +78,37 @@ public class BottomSheetDialogForBook extends BottomSheetDialogFragment implemen
             case R.id.btn_1:
                 btn1.setBackgroundDrawable(ContextCompat.getDrawable(getContext(), R.drawable.shape_clicked));
                 btn1.setTextColor(Color.WHITE);
+                if(i<4){
+                    i++;
+                    tv_time_forbook.setText(price[i-1]);
+                }
                 break;
 
             case R.id.btn_2:
                 btn2.setBackgroundDrawable(ContextCompat.getDrawable(getContext(), R.drawable.shape_clicked));
                 btn2.setTextColor(Color.WHITE);
+                if(i<4){
+                    i++;
+                    tv_time_forbook.setText(price[i-1]);
+                }
                 break;
 
             case R.id.btn_3:
                 btn3.setBackgroundDrawable(ContextCompat.getDrawable(getContext(), R.drawable.shape_clicked));
                 btn3.setTextColor(Color.WHITE);
+                if(i<4){
+                    i++;
+                    tv_time_forbook.setText(price[i-1]);
+                }
                 break;
 
             case R.id.btn_4:
                 btn4.setBackgroundDrawable(ContextCompat.getDrawable(getContext(), R.drawable.shape_clicked));
                 btn4.setTextColor(Color.WHITE);
+                if(i<4){
+                    i++;
+                    tv_time_forbook.setText(price[i-1]);
+                }
                 break;
 
 
